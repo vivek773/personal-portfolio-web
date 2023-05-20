@@ -1,0 +1,18 @@
+// common
+@import "common/common";
+@import "common/globals";
+
+// Here import all components files
+
+// helpers
+@import "helpers/colors";
+@import "helpers/mixins";
+@import "helpers/theme";
+@import "helpers/utilites";
+
+// pages
+@import "pages/about";
+@import "pages/contact";
+@import "pages/experience";
+@import "pages/home";
+@import "pages/work";
