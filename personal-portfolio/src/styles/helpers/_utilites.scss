@@ -1,0 +1,25 @@
+// Text align
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+// width
+.w-f { width: 100%; }
+
+// Display
+.d-block { display: block;}
+.d-flex { display: flex;}
+.align-item-center {align-items: center;}
+.justify-between {justify-content:space-between;}
+.justify-center {justify-content:center;}
+
+// Cursor
+.cp { cursor: pointer; }
+
+.disabled {
+    opacity: 0.2 !important;
+    pointer-events: none;
+}
+
+.overflow-auto { overflow: auto;}
+.overflow-hidden { overflow: hidden;}

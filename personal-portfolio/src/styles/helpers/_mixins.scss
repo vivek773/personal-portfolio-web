@@ -1,0 +1,33 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexCenterBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexCenterCenter {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+@mixin list-loop($className, $styleName, $max, $unit, $gap: 1) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $gap;
+  }
+}
+
+@include list-loop(".p-", "padding", 50, "px");
+@include list-loop(".m-", "margin", 50, "px");
+@include list-loop(".ml-", "margin-left", 50, "px");
+@include list-loop(".mr-", "margin-right", 50, "px");
+@include list-loop(".mt-", "margin-top", 50, "px");
+@include list-loop(".mb-", "margin-buttom", 50, "px");
